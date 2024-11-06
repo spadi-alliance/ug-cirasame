@@ -43,3 +43,6 @@ nav:
   - Release: release/release.md
   - Hardware:
     - CIRASAME: hardware/cirasame/cirasame.md
+  - Firmware:
+    - Skeleton: firmware/skeleton/skeleton.md
+    - StrLRTDC: firmware/strlrtdc/strlrtdc.md
