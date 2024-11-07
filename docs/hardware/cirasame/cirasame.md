@@ -30,6 +30,7 @@ The specification is summarized as follows.
 - ASIC: Weeroc/Omega CITIROC 1A BGA x4
 - Bias: MAX1932ETC+T
     - Supply range: 40-70V (256 steps)
+    - Maximum output current: 2.5 mA
 - Analog outputs:
     - One analog high-gain output from CITIROC
     - One probe output from CITIROC
@@ -93,6 +94,8 @@ Please short-circuit the 1.8V side pins as shown in the [figure](#VCCAD).
 
 When you use MAX1932 as the MPPC bias supply, pleas short-circuit the left side jumper pins.
 If you want to supply bias externally, please short-circuit the right side pins, and connect the bias cable to the MMCM connector.
+
+**The maximum output current is 2.5 mA.**
 
 ### SFP-1
 
