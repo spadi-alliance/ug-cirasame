@@ -125,6 +125,7 @@ The register address map of the Hold Generator is as follows.
 ### AD9220
 
 The AD9220 module reads the data from the ADC (AD9220) on the board.
+**Note that only the high-gain side can be reed.**
 This modules requires the delayed HOLD signal from the Hold Generator.
 Please set the mask register to the Hold Generator before accessing this module.
 Although the data readout trigger to this module is the HOLD signal, it does not start the data read cycle only with the HOLD signal input.
@@ -148,6 +149,32 @@ The register address map of the AD9220 module is as follows.
 |kAddrEventFull    | 0x20100000|  R   |1| Flag indicating event existence|
 |kAddrReadFIFO     | 0x21000000|  R   |8| Data read from the event buffer|
 |kAddrReleaseBusy  | 0x22000000|  W   |-| Manual busy release. Use this if the read sequencer is dead locked.|
+
+#### Data structure
+
+The data word size is 16 bit.
+The data structure is extremely simple, with the ADC data simply arranged in order from channel 0 of ASIC 0.
+The 13th bit, the OTR flag, indicates that the ADC has overflowed.
+Since the CITIROC has a thermometer connected to channel 33, the number of data words from one ASIC is 33.
+In other words, 132 words are read out in one read operation.
+No header or trailer is added.
+**Please note that the temperature reading here is not correct at all.**
+The CIRASAME firmware is not designed to read the CITIROC thermometer.
+
+```
+MSB                                                   LSB
+[    3-bit    ][    1-bit    ][        12-bit        ]
+  Zero padding       OTR              ADC value
+
+1st word:   CITIROC0 ch0
+2nd word:   CITIROC0 ch1
+...
+33th word:  CITIROC0 thermometer
+34th word:  CITIROC1 ch0
+35th word:  CITIROC1 ch1
+...
+132th word: CITIROC3 thermometer
+```
 
 ## MPPC bias supply
 

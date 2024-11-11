@@ -45,4 +45,6 @@ nav:
     - CIRASAME: hardware/cirasame/cirasame.md
   - Firmware:
     - Skeleton: firmware/skeleton/skeleton.md
-#    - StrLRTDC: firmware/strlrtdc/strlrtdc.md
+    - StrLRTDC: firmware/strlrtdc/strlrtdc.md
+  - Software: software/software.md
+  - Practical Usage: practical/practical.md
