@@ -123,6 +123,8 @@ Options:
    Reset probe registers
  -q
    Quiet. Hide all the message.
+ -debug
+   Only parse configuration files, and do not send registers.
 ```
 In this program, the option is specified by a word beginning with a hyphen, unlike hul-common-lib and cirasame-soft where the meaning of option is determined by the position of the argument.
 Specification of ip address is mandatory, and configure files to be read are specified with the `-yaml=` option.
@@ -144,13 +146,15 @@ Although these are a part of the Slow Control category, descriptions are divided
 
 ```yaml
 CITIROC1:
-  PreAMP: HGCf_200fF
-  PreAMP: LGCf_200fF
+  PreAMP_HG: HGCf_400fF
+  PreAMP_LG: LGCf_400fF
   Time Constant HG Shaper: 50.0ns
-  DAC1 code: 100
+  Time Constant LG Shaper: 50.0ns
+  DAC1 code: 1000
   DAC2 code: 250
   LG PA bias: weakbias
   EN_Low_Gain_PA: Disable
+  EN_High_Gain_PA: Enable
   Fast Shaper on LG: HG
 ```
 
@@ -163,16 +167,17 @@ Since key names come from the register name listed in the CITIROC data sheet, yo
 Users can update the default register setting with the value written here.
 
 Since the CIRASAME is for the streaming TDC, the hard-coded default register setting is dedicated for this purpose.
-The functions after the low gain slow shaper are disabled because there is no way to use this signal.
+The functions after the low gain slow shaper are disabled in default because there is no way to use this signal.
+If you want to see the signal from the slow shaper in the low-gain side, please enable them by adding corresponding register settings.
 The peak detector is one of feature of CITIROC, but this is also disabled because the charge measurement is not aimed in CIRASAME.
 The charge measurement for the high-gain side using SCA with the external HOLD signal is selected in default.
 The fast shaper receives the signal from the high-gain pre-amplifier in default, then the low-gain pre-amplifier is disabled.
-In addition, weak bias setting is applied to the log-gain pre-amplifier.
+In addition, weak bias setting is applied to the low-gain pre-amplifier.
 If users use the low-gain side, please update these setting.
 
 ```yaml
-High Gain Channel: 0
-Probe Channel: 0
+High Gain Channel: 32
+Probe Channel: 32
 Probe: Out_fs
 Probe Mux: 2
 ```
