@@ -12,5 +12,9 @@ To readout other MPPCs, an intermediate board changing a connector type is neces
 
 **2024.6.4**
 
-* Descriptions for Hardware, synchronization, firmware, software, and practical usage
+* Descriptions for Hardware, firmware, software, and practical usage
+
+**2024.11.13**
+
+* Descriptions for CitirocControlSoft in the software section
 

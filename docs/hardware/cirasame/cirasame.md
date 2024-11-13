@@ -69,7 +69,7 @@ The probe output from CITIROC are once connected to an analog switch controlled 
 The developer expects that these analog lines are used only for checking the signals using an oscilloscope.
 The charge measurements with the DAQ function is not considered.
 
-In the [figure](#CITIROC-BLOCK), the ASIC control lines from the FPGA are omitted.
+In the [figure](#CIRASAME-BLOCK), the ASIC control lines from the FPGA are omitted.
 
 ## Board interface
 
@@ -140,7 +140,7 @@ Please see the [AMANEQ user guide](https://spadi-alliance.github.io/ug-amaneq/ha
 
 ## Power supply ICs
 
-![1V0D](1V0D.png "1.0V power IC"){: #1V0D"}
+![1V0D](1V0D.png "1.0V power IC"){: #1V0D}
 
 The external DC voltage supply of 35V
 CIRASAME uses the LT8612UDE to step down the external input of 35V to 5V, and then further steps it down to multiple power supply voltages.
