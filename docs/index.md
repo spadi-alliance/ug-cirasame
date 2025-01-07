@@ -10,11 +10,16 @@ To readout other MPPCs, an intermediate board changing a connector type is neces
 
 ## Update history
 
-**2024.6.4**
+**2025.01.07**
 
-* Descriptions for Hardware, firmware, software, and practical usage
+* Descriptions for StrLRTDC-10G in the firmware section
 
 **2024.11.13**
 
 * Descriptions for CitirocControlSoft in the software section
+
+**2024.6.4**
+
+* Descriptions for Hardware, firmware, software, and practical usage
+
 
