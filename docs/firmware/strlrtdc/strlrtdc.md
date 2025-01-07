@@ -8,7 +8,7 @@ Please understand the AMANEQ Str-LRTDC before reading this user guide.
 See also the [overview section](https://spadi-alliance.github.io/ug-amaneq/firmware/overview/overview/) of the AMANEQ firmware.
 In this user guide, the CIRASAME Str-LRTDC is simply called as Str-LRTDC.
 
-[Github repository](https://github.com/AMANEQ-official/StrLrTdc)
+[Github repository](https://github.com/spadi-alliance/CIRASAME-StrTdc)
 
 ```
 - Unique ID:                  0x6041
@@ -33,6 +33,7 @@ In this user guide, the CIRASAME Str-LRTDC is simply called as Str-LRTDC.
 |Version|Date|Changes|
 |:----:|:----|:----|
 |v2.5|2024.6.4|事実上の初期版|
+|v2.6|2025.1.7| - Updating LACCP (v2.1) supporting the frame flag distribution. <br> - Introducing gated scaler.|
 
 ## Functions
 

@@ -46,5 +46,6 @@ nav:
   - Firmware:
     - Skeleton: firmware/skeleton/skeleton.md
     - StrLRTDC: firmware/strlrtdc/strlrtdc.md
+    - StrLRTDC-10G: firmware/strlrtdc-10g/strlrtdc-10g.md
   - Software: software/software.md
   - Practical Usage: practical/practical.md
