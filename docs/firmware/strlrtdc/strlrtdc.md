@@ -32,8 +32,10 @@ In this user guide, the CIRASAME Str-LRTDC is simply called as Str-LRTDC.
 
 |Version|Date|Changes|
 |:----:|:----|:----|
-|v2.5|2024.6.4|事実上の初期版|
+|v2.7|2025.3.5|- Bugfix version of v2.6 <br> - Enabling the function to generate data words with input throttling type-2 start/end data types. |
 |v2.6|2025.1.7| - Updating LACCP (v2.1) supporting the frame flag distribution. <br> - Introducing gated scaler.|
+|v2.5|2024.6.4|事実上の初期版|
+
 
 ## Functions
 
