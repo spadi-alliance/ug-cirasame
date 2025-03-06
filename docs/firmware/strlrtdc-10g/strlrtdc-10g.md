@@ -30,7 +30,8 @@ In this user guide, the CIRASAME Str-LRTDC 10G is simply called as Str-LRTDC-10G
 
 |Version|Date|Changes|
 |:----:|:----|:----|
-|v2.0|2024.6.4|First release version|
+|v2.1|2025.3.5|- Bugfix version of v2.0. <br> - Enabling the function to generate data words with input throttling type-2 start/end data types. |
+|v2.0|2025.1.7|First release version|
 
 ## Functions
 

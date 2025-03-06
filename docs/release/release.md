@@ -1,5 +1,14 @@
 # Release notes
 
+## Mar. 5, 2025
+
+- Bugfix for previous version
+    - All firmware released on Jan. 7 have critical bugs.
+    - So far the function to insert throttling start/end words in the input throttling type-2 unit has not been working. Now that the feature is enabled, a word is generated with input throttling type-2 start/end data types to indicate that the throttling feature is working.
+- New firmware
+    - CIRASAME-StrLRTDC v2.7
+    - CIRASAME-StrLRTDC-10G v2.1
+
 ## Jan. 7, 2025
 
 ### New+Improved
