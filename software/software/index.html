@@ -1,0 +1,1086 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="CIRASAME User Guide">
+      
+      
+        <meta name="author" content="Ryotaro Honda">
+      
+      
+      
+        <link rel="prev" href="../../firmware/strlrtdc-10g/strlrtdc-10g/">
+      
+      
+        <link rel="next" href="../../practical/practical/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Software - CIRASAME User Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="lime" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#software" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="CIRASAME User Guide" class="md-header__button md-logo" aria-label="CIRASAME User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CIRASAME User Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Software
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/spadi-alliance/ug-cirasame" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ug-cirasame
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Top
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../release/release/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Release
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hardware/cirasame/cirasame/" class="md-tabs__link">
+          
+  
+  
+  Hardware
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../firmware/skeleton/skeleton/" class="md-tabs__link">
+          
+  
+  
+  Firmware
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Software
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../practical/practical/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Practical Usage
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="CIRASAME User Guide" class="md-nav__button md-logo" aria-label="CIRASAME User Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CIRASAME User Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/spadi-alliance/ug-cirasame" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ug-cirasame
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Top
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../release/release/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Hardware
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware/cirasame/cirasame/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CIRASAME
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Firmware
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Firmware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../firmware/skeleton/skeleton/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Skeleton
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../firmware/strlrtdc/strlrtdc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    StrLRTDC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../firmware/strlrtdc-10g/strlrtdc-10g/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    StrLRTDC-10G
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hul-common-lib" class="md-nav__link">
+    <span class="md-ellipsis">
+      hul-common-lib
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="hul-common-lib">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#executable-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executable files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Executable files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set_max1932" class="md-nav__link">
+    <span class="md-ellipsis">
+      set_max1932
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cirasame-soft" class="md-nav__link">
+    <span class="md-ellipsis">
+      cirasame-soft
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="cirasame-soft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#executable-files_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executable files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Executable files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ad9220" class="md-nav__link">
+    <span class="md-ellipsis">
+      ad9220
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hgddelay" class="md-nav__link">
+    <span class="md-ellipsis">
+      hgddelay
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citiroccontrolsoft" class="md-nav__link">
+    <span class="md-ellipsis">
+      CitirocControlSoft
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CitirocControlSoft">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration file
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration file">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#registervalueyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      RegisterValue.yml
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputdacyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      InputDAC.yml
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discrimaskyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      DiscriMask.yml
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practical/practical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Practical Usage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="software">Software</h1>
+<p>Here, the author describes the hul-common-lib and the cirasame-soft.</p>
+<h2 id="hul-common-lib">hul-common-lib</h2>
+<p><a href="https://github.com/spadi-alliance/hul-common-lib">Github repository</a></p>
+<p>Since the basic structure of The CIRASAME firmware is the same that of AMANEQ's firmware, the CIRASAME board can be controlled by hul-common-lib.
+Before reading this section, see the <a href="https://spadi-alliance.github.io/ug-amaneq/software/software/">AMANEQ user guide</a>.
+In this user guide, the author additionally explains about programs for CIRASAME.</p>
+<h3 id="executable-files">Executable files</h3>
+<h4 id="set_max1932">set_max1932</h4>
+<p>It can set 8-bit register value to the internal DAC of MAX1932. Usage is as follows.</p>
+<pre><code class="language-shell">            [IP]          [DAC value]
+set_max1932 192.168.10.16 100
+</code></pre>
+<p>Please provides the DAC value between 1-255 in decimal notation.
+If you set 0, the MAX1932 is turned down.</p>
+<h2 id="cirasame-soft">cirasame-soft</h2>
+<p><a href="https://github.com/spadi-alliance/cirasame-soft">Github repository</a></p>
+<p>The cirasame-soft provides programs dedicated for the CIRASAME firmware.
+It requires hul-common-lib to be complied.</p>
+<h3 id="executable-files_1">Executable files</h3>
+<h4 id="ad9220">ad9220</h4>
+<p>This program accesses the AD9220 block in the FPGA and reads out the ADC data for the specified number of events.
+The data that has just been read is written to the file specified by the argument.
+As described in the firmware section, no header or trailer words are added to indicate the end of an event.
+Process every 132 words.
+<strong>This program should not be terminated by Ctrl-C.</strong>
+If users stop it by Ctrl-C, data in the next run will be broken.</p>
+<p>Example to read 100 events and store them to hoge.dat.</p>
+<pre><code class="language-shell">       [IP]          [file]   [Events]
+ad9220 192.168.10.16 hoge.dat 100
+</code></pre>
+<h4 id="hgddelay">hgddelay</h4>
+<p>Please read the Hold Generator sub-section in CIRASAME skeleton firmware section.
+In this program, the register value given at 2nd argument is transformed to the mask pattern.
+The value of 1 provides the smallest delay amount, and the delay amount increases as the given value increases.
+<strong>Please set the register value before calling ad9220 program</strong></p>
+<h2 id="citiroccontrolsoft">CitirocControlSoft</h2>
+<p><a href="https://github.com/J-PARC-High-p/CitirocControlSoft">Github repository</a></p>
+<p>The CitirocControlSoft is a software dedicated for using the CITIROC Controller module in FPGA firmware.
+It generates the bit pattern to be sent to CITIROCs from configuration files and sends it to FPGA through RBCP.
+In CITIROC, there are three categories for control registers.</p>
+<ul>
+<li><strong>Slow Control:</strong> The biggest category takes an entire ASIC setting such as pre-amplifier gain, shaping constant, discriminator threshold DAC, etc.</li>
+<li><strong>Read Slow Control:</strong> This register bit selects the ASIC channel to be output from the analog output.</li>
+<li><strong>Probe Register:</strong> This register bits arranges the signal path to the probe port.</li>
+</ul>
+<p>For more details, please read the CITIROC data sheet.</p>
+<p>The directory structure is as follows.
+Please compile the source codes under the <code>src</code> directory, then an executable file, <code>femcitiroc_control</code>, will be generated in the <code>bin</code> directory.</p>
+<pre><code>.
+└── CitirocControlSoft/
+    ├── bin
+    ├── default_register
+    └── src/
+        ├── Makefile
+        ├── BitDump.hh
+        ├── BitDump.cc
+        ├── FPGAModule.hh
+        ├── FPGAModule.cc
+        ├── RegisterMap.cc
+        ├── UDPRBCP.hh
+        ├── UDPRBCP.cc
+        ├── Uncoyable.hh
+        ├── configLoader.hh
+        ├── configLoader.cc
+        ├── control_impl.hh
+        ├── control_impl.cc
+        ├── femcitiroc_control_main.cc
+        └── rbcp.h
+</code></pre>
+<p>Since the Slow Control category contains so many control registers, it is not realistic to manage all of them using a configuration file.
+Then, a default register bit pattern for Slow Control is hard-coded in the <code>configLoader.cc</code> file.
+Users can update only the parts they want to change by configuration files.
+The Read Slow Control and Probe Register bit patterns are 0 in default in source code.
+They can be also updated by configuration files.</p>
+<p>When users execute <code>femcitiroc_control</code> without any arguments, usage appears as follows.</p>
+<pre><code>Usage
+  femcitiroc_control [options...]
+
+Options:
+ -ip=xxx.yyy.zzz.aaa (Must)
+ -yaml=file-path
+   If -yaml=auto is designated, this program refers
+   the register files in ${HOME}/vme-easiroc-registers,
+   which are labeled by the ip address.
+   i.e., RegisterValue_aaa.yml, InputDAC_aaa.yml, PedeSup_aaa.yml
+ -sc
+   Send slow control registers
+ -read
+   Send read slow control registers
+ -probe
+   Send probe registers
+ -all
+   Equal to -sc -read -probe
+ -probe-off
+   Reset probe registers
+ -q
+   Quiet. Hide all the message.
+ -debug
+   Only parse configuration files, and do not send registers.
+</code></pre>
+<p>In this program, the option is specified by a word beginning with a hyphen, unlike hul-common-lib and cirasame-soft where the meaning of option is determined by the position of the argument.
+Specification of ip address is mandatory, and configure files to be read are specified with the <code>-yaml=</code> option.
+Sine you can take the <code>-yaml=</code> option as many times as you want, it is possible to specify multiple configuration files.
+The options, <code>-sc, -read, -probe</code>, specify the register categories to be sent.
+As these categories are independent, you can change a certain category while maintaining other categories are unchanged.
+Users can take multiple these options at once like <code>-sc -read</code>.</p>
+<h3 id="configuration-file">Configuration file</h3>
+<p>If the user does not specify any configuration file by the option, default configuration files existing in the <code>default_register</code> directory are used.
+At present, three configuration files, <code>RegisterValue.yml, InputDAC.yml, and DiscriMask.yml</code> are prepared.
+The developer expects that these are examples to make a new configuration file by users.
+The <code>RegisterValue.yml</code> file contains the Slow Control, Read Slow Control, and probe registers in a file.
+The <code>InputDAC.yml</code> and <code>DiscriMask.yml</code> contain the Slow Control registers, <code>Input 8-bit DAC</code> and <code>Discriminator Mask</code>, respectively.
+Although these are a part of the Slow Control category, descriptions are divided to independent files because they require a lot of text lines.</p>
+<h4 id="registervalueyml">RegisterValue.yml</h4>
+<pre><code class="language-yaml">CITIROC1:
+  PreAMP_HG: HGCf_400fF
+  PreAMP_LG: LGCf_400fF
+  Time Constant HG Shaper: 50.0ns
+  Time Constant LG Shaper: 50.0ns
+  DAC1 code: 1000
+  DAC2 code: 250
+  LG PA bias: weakbias
+  EN_Low_Gain_PA: Disable
+  EN_High_Gain_PA: Enable
+  Fast Shaper on LG: HG
+</code></pre>
+<p>This is a part of <code>RegisterValue.yml</code> in the default_register directory.
+Four CITIROCs are labeled as CITIROC1, 2, 3, and 4.
+Registers in CITIROC is specified by keys such as "Time Constant HG Shaper".
+Alias such as "50.0ns" are prepared for some register values.
+To know the list of keys and alias, please see the source code of <code>configLoader.cc</code>.
+Since key names come from the register name listed in the CITIROC data sheet, you won't have much trouble finding a desired key.
+Users can update the default register setting with the value written here.</p>
+<p>Since the CIRASAME is for the streaming TDC, the hard-coded default register setting is dedicated for this purpose.
+The functions after the low gain slow shaper are disabled in default because there is no way to use this signal.
+If you want to see the signal from the slow shaper in the low-gain side, please enable them by adding corresponding register settings.
+The peak detector is one of feature of CITIROC, but this is also disabled because the charge measurement is not aimed in CIRASAME.
+The charge measurement for the high-gain side using SCA with the external HOLD signal is selected in default.
+The fast shaper receives the signal from the high-gain pre-amplifier in default, then the low-gain pre-amplifier is disabled.
+In addition, weak bias setting is applied to the low-gain pre-amplifier.
+If users use the low-gain side, please update these setting.</p>
+<pre><code class="language-yaml">High Gain Channel: 32
+Probe Channel: 32
+Probe: Out_fs
+Probe Mux: 2
+</code></pre>
+<p>At the end of <code>RegisterValue.yml</code>, the register setting for Read Slow Control and Probe categories are written.
+"High Gain Channel" selects the readout channel from the analog output for the high-gain side.
+Users can select a value between 0 to 127.</p>
+<p>"Probe Channel", "Probe", and "Probe Mux" are registers for the Probe category.
+"High Gain Channel" selects the readout channel from the probe output.
+Users can select a value between 0 to 127, but users need to additionally set "Probe Mux" register to specify the channel to be output.
+"Probe" register specifies the probing point in ASIC.
+The list of probing points is as follows</p>
+<ul>
+<li><strong>None:</strong> Disable probe</li>
+<li><strong>Out_PA_HG:</strong> Probe the high-gain pre-amplifier output</li>
+<li><strong>Out_PA_LG:</strong> Probe the low-gain pre-amplifier output</li>
+<li><strong>Out_ssh_HG:</strong> Probe the high-gain slow shaper output</li>
+<li><strong>Out_ssh_LG:</strong> Probe the low-gain slow shaper output</li>
+<li><strong>Out_fs:</strong> Probe the fast shaper output</li>
+</ul>
+<p>"Probe Mux" specifies the ASIC number to be output from the analog switch, and users can select the value between 1 to 4.</p>
+<h4 id="inputdacyml">InputDAC.yml</h4>
+<p>Users can set the Input 8-bit DAC value channel by channel in each CITIROC by this file.
+The register can take values between 0 to 255.</p>
+<h4 id="discrimaskyml">DiscriMask.yml</h4>
+<p>Users can mask the discriminator output channel by channel by this file.
+If users set 1, the output at that channel is blocked.
+Please use this register to block a noisy channel.</p>
+<h3 id="usage">Usage</h3>
+<p>Users can use this program as follows.
+Since this program requires many arguments, the developer recommends to write a shell script to hide them when you need to manage multiple CIRASAME boards.
+The developer prepares a simple shell script (runControl.sh) as an example.</p>
+<pre><code class="language-shell">femcitiroc_control -ip=192.168.10.16 -yaml=RegisterValue_16.yml -yaml=InputDAC_16.yml -yaml=DiscriMask_16.yml -sc -read
+</code></pre>
+<p>Note that the probe function connects the internal probing points and the the external signal line without a buffer.
+Then, the probe line looks like a long stub resulting a performance deterioration.
+Please reset the probe output with the <code>-probe-off</code> option before doing the measurement.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      KEK IPNS
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["toc.integrate", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
