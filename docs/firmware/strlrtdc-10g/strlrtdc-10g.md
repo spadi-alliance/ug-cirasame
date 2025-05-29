@@ -30,6 +30,7 @@ In this user guide, the CIRASAME Str-LRTDC 10G is simply called as Str-LRTDC-10G
 
 |Version|Date|Changes|
 |:----:|:----|:----|
+|v2.2|2025.5.29|- Bugfix version of v2.1 <br> - Fixed the bug that the delay function for the trigger assisted mode does not work.|
 |v2.1|2025.3.5|- Bugfix version of v2.0. <br> - Enabling the function to generate data words with input throttling type-2 start/end data types. |
 |v2.0|2025.1.7|First release version|
 
@@ -54,4 +55,3 @@ The local bus address map is as follows.
 |Self Diagnosis System   |0xC000'0000 - 0xCFFF'0000|
 |Flash Memory Programmer |0xD000'0000 - 0xDFFF'0000|
 |Bus Controller          |0xE000'0000 - 0xEFFF'0000|
-
