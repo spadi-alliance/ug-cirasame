@@ -32,15 +32,14 @@ In this user guide, the CIRASAME Str-LRTDC is simply called as Str-LRTDC.
 
 |Version|Date|Changes|
 |:----:|:----|:----|
+|v2.8|2025.5.29|- Bugfix version of v2.7 <br> - Fixed the bug that the delay function for the trigger assisted mode does not work.|
 |v2.7|2025.3.5|- Bugfix version of v2.6 <br> - Enabling the function to generate data words with input throttling type-2 start/end data types. |
 |v2.6|2025.1.7| - Updating LACCP (v2.1) supporting the frame flag distribution. <br> - Introducing gated scaler.|
 |v2.5|2024.6.4|事実上の初期版|
 
-
 ## Functions
 
 ![BL-DIAGRAM](block-diagram.png "Simplified block diagram of Str-LRTDC."){: #BL-DIAGRAM width="80%"}
-
 
 The [figure](#BL-DIAGRAM) shows the simplified block diagram of CIRASAME Str-LRTDC firmware.
 Unnecessary blocks not related to the DAQ functions are omitted for the figure.
@@ -87,7 +86,6 @@ The local bus address map is as follows.
 The streaming low-resolution TDC implemented is the completely the same that of the AMANEQ Str-LRTDC.
 See the [AMANEQ user guide](https://spadi-alliance.github.io/ug-amaneq/firmware/strlrtdc/strlrtdc/#streaming-tdc-block).
 Only the local bus addresses are different from those of AMANEQ's firmware.
-
 
 ### Register address map
 

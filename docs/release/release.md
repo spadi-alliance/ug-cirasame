@@ -1,5 +1,16 @@
 # Release notes
 
+## May 29, 2025
+
+### New + Bugfix
+
+- Bugfix for previous version
+    - Rename "trigger emulation mode" as "trigger assisted mode".
+    - The delay function of the trigger gate generator for the trigger assisted mode does not work due to bug. It is fixed.
+- New firmware
+    - CIRASAME-StrLRTDC v2.8
+    - CIRASAME-StrLRTDC-10G v2.2
+
 ## Mar. 5, 2025
 
 - Bugfix for previous version
@@ -30,5 +41,3 @@
 - De facto release version
     - CIRASAME Skeleton v2.0
     - CIRASAME-StrLRTDC v2.5
-
-
