@@ -103,9 +103,9 @@ Only the local bus addresses are different from those of AMANEQ's firmware.
 |kTotMinTh         | 0x5060'0000|   W/R|16|TOT filter low threshold|
 |kTotMaxTh         | 0x5070'0000|   W/R|16|TOT filter high threshold|
 |	  		    | | | | |
-|kTrgEmuCtrl       | 0x5080'0000|   W/R|2|Set trigger emulation mode. (default: 0x0) <br> 1st-bit: Enable trigger gate mode <br> 2nd-bit: Enable Veto gate mode|
-|kTrgEmuDelay      | 0x5090'0000|   W/R|8|Set the delay from the trigger (veto) input to opening the trigger (veto) gate. LSB precision is 8ns.|
-|kTrgEmuWidth      | 0x50A0'0000|   W/R|16|Set the trigger (veto) gate width. LSB precision is 8ns.|
+|kTrgAssistCtrl       | 0x5080'0000|   W/R|2|Set trigger assisted mode. (default: 0x0) <br> 1st-bit: Enable trigger gate mode <br> 2nd-bit: Enable Veto gate mode|
+|kTrgAssistDelay      | 0x5090'0000|   W/R|8|Set the delay from the trigger (veto) input to opening the trigger (veto) gate. LSB precision is 8ns.|
+|kTrgAssistWidth      | 0x50A0'0000|   W/R|16|Set the trigger (veto) gate width. LSB precision is 8ns.|
 |			    | | | | |
 |kHbfThrottCtrl    | 0x50B0'0000|   W/R|4|Set the heartbeat frame throttling condition. <br> 0x0: Disable (default) <br> 0x1: Only data for frame numbers that are multiples of 2 is acquired. <br> 0x2: Only data for frame numbers that are multiples of 4 is acquired. <br> 0x4: Only data for frame numbers that are multiples of 8 is acquired. <br> 0x8: Only data for frame numbers that are multiples of 16 is acquired.|
 |			    | | | | |
