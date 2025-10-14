@@ -10,6 +10,10 @@ To readout other MPPCs, an intermediate board changing a connector type is neces
 
 ## Update history
 
+**2025.10.14**
+
+- Descriptions for firmware section
+
 **2025.05.29**
 
 - Descriptions for firmware section

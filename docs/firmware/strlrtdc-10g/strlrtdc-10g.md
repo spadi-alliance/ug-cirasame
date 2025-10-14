@@ -30,6 +30,7 @@ In this user guide, the CIRASAME Str-LRTDC 10G is simply called as Str-LRTDC-10G
 
 |Version|Date|Changes|
 |:----:|:----|:----|
+|v2.3|2025.10.14| - Fixed the bit position of the frameFlag1/2 swapped in the heartbeat delimiter flags. |
 |v2.2|2025.5.29|- Bugfix version of v2.1 <br> - Fixed the bug that the delay function for the trigger assisted mode does not work.|
 |v2.1|2025.3.5|- Bugfix version of v2.0. <br> - Enabling the function to generate data words with input throttling type-2 start/end data types. |
 |v2.0|2025.1.7|First release version|

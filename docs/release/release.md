@@ -1,5 +1,15 @@
 # Release notes
 
+## Oct 14, 2025
+
+### Bugfix
+
+- Bugfix for previous version
+    - Fixed the bit position of the frameFlag1/2 swapped in the heartbeat delimiter flags.
+- New firmware
+    - CIRASAME-StrLRTDC v2.9
+    - CIRASAME-StrLRTDC-10G v2.3
+
 ## May 29, 2025
 
 ### New + Bugfix

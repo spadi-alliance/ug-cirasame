@@ -32,6 +32,7 @@ In this user guide, the CIRASAME Str-LRTDC is simply called as Str-LRTDC.
 
 |Version|Date|Changes|
 |:----:|:----|:----|
+|v2.9|2025.10.14| - Fixed the bit position of the frameFlag1/2 swapped in the heartbeat delimiter flags. |
 |v2.8|2025.5.29|- Bugfix version of v2.7 <br> - Fixed the bug that the delay function for the trigger assisted mode does not work.|
 |v2.7|2025.3.5|- Bugfix version of v2.6 <br> - Enabling the function to generate data words with input throttling type-2 start/end data types. |
 |v2.6|2025.1.7| - Updating LACCP (v2.1) supporting the frame flag distribution. <br> - Introducing gated scaler.|
